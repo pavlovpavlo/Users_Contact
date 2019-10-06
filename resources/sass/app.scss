@@ -1,0 +1,225 @@
+.app-wrapper {
+    padding-top: 25px;
+    max-width: 980px;
+    margin: auto;
+    border: 1px gray solid;
+}
+.input{
+    height: 22px;
+    padding: 0px 10px;
+    background-color: rgba(0,0,0,0.03);
+    border: none;
+    display: inline;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-box-shadow: inset 1px 1px 0px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 1px 1px 0px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+    box-shadow: inset 1px 1px 0px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+    &-description{
+        height: 40px;
+    }
+}
+
+.buttons {
+    border-radius: 12px;
+    color: black;
+    font: normal 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact {
+    & img {
+        height: 60px;
+        border-radius: 50%;
+        border: 1px gray solid;
+    }
+
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        & h3 {
+            margin-left: 25px;
+        }
+    }
+
+    &-container {
+        padding: 15px 20px;
+        width: 90%;
+        margin: auto;
+        border: 1px gray solid;
+        border-radius: 12px;
+        margin-bottom: 25px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: lightcyan;
+        }
+    }
+
+    &_buttons {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_information {
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: center;
+        &-editing{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            & input{
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &_edit {
+        background-color: #d7e5f5;
+        border-top: 1px solid #abbbcc;
+        border-left: 1px solid #a7b6c7;
+        border-bottom: 1px solid #a1afbf;
+        border-right: 1px solid #a7b6c7;
+
+        &:hover {
+            background-color: #ccd9e8;
+            border-top: 1px solid #a1afbf;
+            border-left: 1px solid #9caaba;
+            border-bottom: 1px solid #96a3b3;
+            border-right: 1px solid #9caaba;
+        }
+    }
+
+    &-add {
+        background-color: #7fbf4d;
+        border: 1px solid #63a62f;
+        border-bottom: 1px solid #5b992b;
+
+        &:hover {
+            background-color: #76b347;
+            cursor: pointer;
+            border: 1px solid #5b992b;
+            border-bottom: 1px solid #538c27;
+        }
+    }
+
+    &_delete {
+        background-color: #ef7c61;
+        border: 1px solid #951100;
+
+        &:hover {
+            background-color: #ef9c69;
+            border: 1px solid #9f110f;
+        }
+    }
+
+}
+
+.some-information {
+    & p{
+        text-align: center;
+    }
+    & div{
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        & input{
+            width: 90%;
+            height: 40px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    padding: 5%;
+    padding-top: 0;
+    align-items: flex-end;
+    flex-direction: column;
+
+    &-control {
+        width: 100%;
+        margin-bottom: 5px;
+
+        & input {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+
+    &-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & img {
+
+            border-radius: 50%;
+            border: 1px gray solid;
+            width: 20%;
+            max-width: 80px;
+        }
+
+        & div {
+            width: 75%;
+        }
+
+        & div input {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        & img {
+            height: 50px;
+        }
+
+        &-container {
+            padding: 10px 10px;
+            width: 93%;
+            margin-bottom: 10px;
+        }
+
+        &_buttons {
+            width: 125px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        &_information {
+            font-size: 14px;
+        }
+    }
+    .some-information p {
+        font-size: 14px;
+    }
+    .buttons {
+        padding: 10px 10px;
+    }
+}
